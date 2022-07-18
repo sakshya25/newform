@@ -299,6 +299,8 @@ function Registration() {
     return errors;
   };
 
+
+
   return (
     <>
       <div className="form_container">
@@ -311,56 +313,73 @@ function Registration() {
           <form className="input">
             <div className="input_container">
               <TextField
-                required="required"
+              Name
+                id="outlined-basic"
+                variant="outlined"
+                // required="required"
+                label="Name"
                 type="text"
                 className="input_field"
-                placeholder="Name"
+                // placeholder="Name"
                 name="Name"
                 value={Name}
                 onChange={(e) => setName(e.target.value)}
                 onBlur={handleFocusName}
-                focused={focused.toString()}
+                // focused={focused.toString()}
               />
               <span className="error_msg">{formErrorsName.Name}</span>
             </div>
             <div className="input_container">
               <TextField
+               id="outlined-basic"
+               varient="outlined"
+              //  required="required"
+              label="Student No."
                 type="text"
                 className="input_field"
-                placeholder="Student No."
+                // placeholder="Student No."
                 name="Rollno"
                 value={Rollno}
                 onChange={(e) => setRollno(e.target.value)}
                 onBlur={handleFocusRoll}
-                focused={focused.toString()}
+                // focused={focused.toString()}
               />
+              {/* <TextField variant="outlined" label='hell'/> */}
 
               <span className="error_msg">{formErrorsRoll.Rollno}</span>
             </div>
             <div className="input_container">
               <TextField
+               id="outlined-basic"
+               varient="outlined"
+              //  required="required"
+               label="Contact no."
                 type="text"
                 className="input_field"
-                placeholder="Contact No."
+                // placeholder="Contact No."
                 name="Contactno"
                 value={Contactno}
                 onChange={(e) => setContactno(e.target.value)}
                 onBlur={handleFocusContactno}
-                focused={focused.toString()}
+                // focused={focused.toString()}
               />
 
               <span className="error_msg">{formErrorsContactno.Contactno}</span>
             </div>
             <div className="input_container">
               <TextField
+               id="outlined-basic"
+               varient="outlined"
+              //  required="required"
+               label="email."
                 type="email"
                 className="input_field emailinp"
-                placeholder="Email: xyz@akgec.ac.in"
+                // placeholder="Email: xyz@akgec.ac.in"
                 name="Email"
                 value={Email}
                 onChange={(e) => setEmail(e.target.value)}
                 onBlur={handleFocusEmail}
-                focused={focused.toString()}
+                // focused={focused.toString()}
               />
 
               <span className="error_msg">{formErrorsEmail.Email}</span>
@@ -373,7 +392,7 @@ function Registration() {
                 value={Branch}
                 onChange={(e) => setBranch(e.target.value)}
                 onBlur={handleFocusBranch}
-                focused={focused.toString()}
+                // focused={focused.toString()}
               >
                 <option value=" ">Branch</option>
                 <option>CSE</option>
@@ -397,7 +416,7 @@ function Registration() {
                 value={Gender}
                 onChange={(e) => setGender(e.target.value)}
                 onBlur={handleFocusGender}
-                focused={focused.toString()}
+                // focused={focused.toString()}
               >
                 <option value=" ">Gender</option>
                 <option value="Male">Male</option>

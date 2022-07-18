@@ -60,11 +60,11 @@ input::placeholder{
   margin-bottom: 0;
   width: 55%;
   background: #FFFCFC;
-border: 1px solid #777777;
-border-radius: 0.4rem;
-font-size: 1.2rem;
-letter-spacing: -0.03em;
-padding:0  0.2rem;
+  border: 1px solid #777777;
+  border-radius: 0.4rem;
+  font-size: 1.2rem;
+  letter-spacing: -0.03em;
+  padding:0  0.2rem;
 
 }
 
